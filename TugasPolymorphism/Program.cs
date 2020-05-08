@@ -20,9 +20,12 @@ namespace TugasPolymorphism
                 printer = new Epson();
             else if (nomorPrinter == 2)
                 printer = new Canon();
-            else
+            else if (nomorPrinter == 3)
                 printer = new LaserJet();
-
+            else 
+            {
+                Console.WriteLine("Pilihan Tidak Tersedia");
+            }
             printer.Show();
             printer.Print();
 
