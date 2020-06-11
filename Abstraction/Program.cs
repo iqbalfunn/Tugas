@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Abstraction
 {
@@ -6,6 +6,9 @@ namespace Abstraction
     {
         static void Main(string[] args)
         {
+            ISuara suara = new Suara();
+            suara.View();
+
             Mobil klakson;
 
             klakson = new Avanza();
